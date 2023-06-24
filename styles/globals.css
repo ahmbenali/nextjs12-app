@@ -1,26 +1,97 @@
-html,
-body {
-  padding: 0;
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+}
+
+body {
+  /* min-height: 100%; */
+  font-family: sans-serif;
+  padding: 10px 20px;
+  line-height: 1.6;
+  background-color: #353440;
+  color: #aaa;
+
+}
+
+.app-container {
+  /* background-color: yellow; */
+  max-width: 80%;
+  margin-inline: auto;
+  
 }
 
 a {
-  color: inherit;
+  /* text-decoration: none; */
+  color: #3267b6;
+}
+
+.header {
+  border-bottom:.1px solid #434343;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  padding-block: .75em;
+  margin-bottom: 3em;
+}
+
+.btn-back {
+  border-radius: 4px;
+  color: #04204a;
+  background-color: yellow;
+  padding: .5em .75em;
+}
+
+.btn-wrap {
+  padding-block: 2em;
+}
+
+
+.header-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.header-nav ul li {
+  padding-inline: 2em;
+}
+
+.header-nav a {
+  color: #a7a7a7;
+  margin-right: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.header-nav a.active {
+  color: #3267b6;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.site-footer {
+  background-color: rgb(80, 74, 63);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 80%;
+  margin-left: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+footer {
+  width: 80%;
+  border-top:.1px solid #434343;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin:2em auto;
+  transform: translate(-50%, 0);
+  /* background-color: #49456b; */
 }
